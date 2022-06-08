@@ -8,8 +8,8 @@ class LogoView extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          width: MediaQuery.of(context).size.width * 0.5,
-          height: MediaQuery.of(context).size.height * 0.3,
+          width: MediaQuery.of(context).size.width,
+          height: double.infinity,
           decoration: BoxDecoration(
               image: DecorationImage(
                   fit: BoxFit.contain, image: AssetImage("images/Pic.png"))),
