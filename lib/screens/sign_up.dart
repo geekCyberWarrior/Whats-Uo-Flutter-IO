@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:whats_up_io/widgets/button.dart';
 import 'package:whats_up_io/widgets/logo.dart';
@@ -13,6 +14,9 @@ class _SignUpViewState extends State<SignUpView> {
   var rememberMe = false;
   var nameController = TextEditingController();
   var numberController = TextEditingController();
+  FirebaseFirestore firestore = FirebaseFirestore.instance;
+  CollectionReference users = FirebaseFirestore.instance.collection('users');
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -123,6 +127,15 @@ class _SignUpViewState extends State<SignUpView> {
                               onPressed: () {
                                 print("Full Name: ${nameController.text}");
                                 print("Number: ${numberController.text}");
+                                users
+                                    .add({
+                                      'full_name':
+                                          nameController.text, // John Doe
+                                      'number': numberController.text,
+                                    })
+                                    .then((value) => print("User Added"))
+                                    .catchError((error) =>
+                                        print("Failed to add user: $error"));
                               },
                             ),
                             Row(

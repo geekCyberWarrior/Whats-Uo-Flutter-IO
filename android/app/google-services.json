@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "369209919182",
+    "project_id": "whats-up-temp-io",
+    "storage_bucket": "whats-up-temp-io.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369209919182:android:1eee27f201e0f79543329f",
+        "android_client_info": {
+          "package_name": "com.example.whats_up_io"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369209919182-qt33u1l462fnaneb19l8bkl21g58gd9u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.whats_up_io",
+            "certificate_hash": "379a4d1f47bd0feac248957e29ef213e91155710"
+          }
+        },
+        {
+          "client_id": "369209919182-qcd13k98upffcavcd1t8rfb4bfv5068d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbV14GlJGX9pl1YAXUuDINa4JNUn1ved0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369209919182-qcd13k98upffcavcd1t8rfb4bfv5068d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
